@@ -1,0 +1,31 @@
+{
+  "name": "server",
+  "version": "0.0.1",
+  "description": "Server for the Optimize Starter Project",
+  "main": "./src/index.ts",
+  "scripts": {
+    "push": "prisma db push",
+    "start": "prisma generate && tsx ./src/main.ts --env-file=.env"
+  },
+  "keywords": [],
+  "author": "Igal Klebanov",
+  "license": "ISC",
+  "devDependencies": {
+    "@prisma/extension-optimize": "1.0.1",
+    "@types/express": "5.0.0",
+    "@types/node": "22.8.2",
+    "prisma": "5.21.1",
+    "tsx": "4.19.2",
+    "typescript": "5.6.3"
+  },
+  "dependencies": {
+    "@prisma/client": "5.21.1",
+    "@sentry/node": "^8.35.0",
+    "@sentry/profiling-node": "^8.35.0",
+    "@trpc/server": "next",
+    "@types/cors": "2.8.17",
+    "cors": "2.8.5",
+    "express": "4.21.1",
+    "zod": "3.23.8"
+  }
+}
